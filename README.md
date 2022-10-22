@@ -3,5 +3,5 @@ Collection of laravel blade components
 
 Components
 - [x] Modal
-- [ ] Select
+- [ ] Select with search
 - [ ] Dropdown
