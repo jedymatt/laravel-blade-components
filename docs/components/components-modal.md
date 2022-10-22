@@ -1,5 +1,7 @@
 # Modal
 
+## Basic Modal
+
 ```blade
 <!-- resources/views/components/modal.blade.php -->
 @props(['open' => false])
@@ -33,13 +35,13 @@
 </div>
 ```
 
-## Available Functions
+### Available Functions
 
 - `hide()` - closes the modal.
 - `show()` - opens the modal.
 - `whenOpen(func)` - function is executed when the modal is open, useful when the modal has a form and you want it to focus on the input when the modal is opened for example `whenOpen(()=> $el.focus())`.
 
-## Usage examples
+### Usage examples
 
 ```blade
 <x-modal>
@@ -109,3 +111,7 @@
     </x-slot>
 </x-modal>
 ```
+
+## Modal With Explicit Location
+
+TODO

@@ -1,12 +1,17 @@
-# Laravel Blade Components
+---
+layout: home
 
-Collection of headless customizable laravel blade components
-
-## Requirements
-
-- Existing laravel project
-- Basic knowledge Alpine.js
-
-::: info
-The examples are using **tailwindcss** for styling but you can freely customize it.
-:::
+title: Home
+titleTemplate: Laravel Blade Components
+hero:
+  name: Laravel
+  text: Blade Components
+  tagline: Collection of headless customizable laravel blade components.
+  actions:
+    - theme: brand
+      text: See Components
+      link: /components/introduction-getting-started
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/jedymatt/laravel-blade-components
+---
