@@ -1,6 +1,7 @@
 # laravel-blade-components
 Collection of laravel blade components
 
-TODO
+Components
+- [x] Modal
 - [ ] Select
 - [ ] Dropdown
