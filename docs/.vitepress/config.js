@@ -9,7 +9,7 @@ export default defineConfig({
         nav: [
             {
                 text: 'Components',
-                link: '/components',
+                link: '/components/',
             },
         ],
         socialLinks: [
@@ -18,6 +18,19 @@ export default defineConfig({
         editLink: {
             pattern: 'https://github.com/jedymatt/laravel-blade-components/edit/main/docs/:path',
             text: 'Edit this page on GitHub',
+        },
+        sidebar: {
+            '/components/': [
+                {
+                    text: 'Components',
+                    items: [
+                        {
+                            text: 'Modal',
+                            link: '/components/modal',
+                        }
+                    ]
+                }
+            ],
         },
     },
 })
