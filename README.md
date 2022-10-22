@@ -2,5 +2,5 @@
 Collection of laravel blade components
 
 TODO
-# Select
-# Dropdown
+- [ ] Select
+- [ ] Dropdown
