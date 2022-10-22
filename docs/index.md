@@ -6,7 +6,7 @@ titleTemplate: Laravel Blade Components
 hero:
   name: Laravel
   text: Blade Components
-  tagline: Collection of headless customizable laravel blade components.
+  tagline: Collection of customizable laravel blade components.
   actions:
     - theme: brand
       text: See Components

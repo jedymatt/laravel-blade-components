@@ -1,6 +1,6 @@
 # Getting Started
 
-Collection of headless customizable laravel blade components.
+Collection of customizable laravel blade components.
 
 ## Requirements
 
