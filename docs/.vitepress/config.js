@@ -4,6 +4,7 @@ export default defineConfig({
     title: 'Blade Components',
     titleTemplate: 'Laravel Blade Components',
     cleanUrls: true,
+    base: 'https://jedymatt.github.io/laravel-blade-components/',
     themeConfig: {
         nav: [
             {
