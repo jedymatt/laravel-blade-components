@@ -3,10 +3,10 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
     title: 'Blade Components',
     titleTemplate: 'Laravel Blade Components',
+    lastUpdated: true,
     cleanUrls: 'with-subfolders',
     base: '/laravel-blade-components/',
     themeConfig: {
-        lastUpdatedText: true,
         nav: [
             {
                 text: 'Components',

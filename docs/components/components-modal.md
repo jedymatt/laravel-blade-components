@@ -35,13 +35,27 @@
 </div>
 ```
 
+### Component Properties
+
+- `open` - Defaults to `false`.
+
 ### Available Functions
 
-- `hide()` - closes the modal.
-- `show()` - opens the modal.
-- `whenOpen(func)` - function is executed when the modal is open, useful when the modal has a form and you want it to focus on the input when the modal is opened for example `whenOpen(()=> $el.focus())`.
+- `show()` - Opens the modal.
+- `hide()` - Oloses the modal.
 
-### Usage examples
+    Can be used when there is a cancel or close button, for example:
+    ```blade
+    <a href="#" x-on:click.prevent="hide()"> Cancel </a>
+    ```
+- `whenOpen(func)` - Function is executed when the modal is open.
+
+    Useful when you want the input to focus when the modal is opened, for example:
+    ```blade
+    <input type="text" x-effect="whenOpen(() => $el.focus())" />
+    ```
+
+### Example Usage
 
 ```blade
 <x-modal>
@@ -52,62 +66,6 @@
     </x-slot>
     <x-slot name="content">
         Hello World
-    </x-slot>
-</x-modal>
-```
-
-```blade
-<x-modal :open="$errors->create->any()">
-    <x-slot name="trigger">
-        <x-primary-button type="button">
-            Create Position
-        </x-primary-button>
-    </x-slot>
-    <x-slot name="content">
-        <div class="w-full max-w-lg rounded-md border bg-white px-4 py-6 shadow-md">
-            <span class="text-2xl font-semibold">Create Position</span>
-            <div class="mt-4">
-                <form
-                    action="{{ route('admin.positions.store') }}"
-                    method="post"
-                >
-                    @csrf
-                    <div>
-                        <x-input-label
-                            for="name"
-                            value="Name"
-                        />
-                        <x-text-input
-                            class="mt-1 block w-full"
-                            id="name"
-                            name="name"
-                            type="text"
-                            value="{{ old('name') }}"
-                            required
-                            placeholder="Position Name"
-                            autocomplete="off"
-                            x-effect="whenOpen(() => $el.focus())"
-                        />
-                        <x-input-error
-                            class="mt-2"
-                            :messages="$errors->create->get('name')"
-                        />
-                    </div>
-                    <div class="mt-4 flex items-center justify-end gap-2">
-                        <a
-                            class="inline-flex items-center rounded-md border border-transparent px-4 py-2 text-xs font-semibold uppercase tracking-widest ring-gray-300 transition duration-150 ease-in-out hover:bg-gray-200 focus:outline-none focus:ring active:bg-gray-400 disabled:opacity-25"
-                            href="#"
-                            x-on:click.prevent="hide()"
-                        >
-                            Cancel
-                        </a>
-                        <x-primary-button type="submit">
-                            Create
-                        </x-primary-button>
-                    </div>
-                </form>
-            </div>
-        </div>
     </x-slot>
 </x-modal>
 ```
