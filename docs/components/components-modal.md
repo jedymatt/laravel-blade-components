@@ -44,16 +44,19 @@
 - `show()` - Opens the modal.
 - `hide()` - Oloses the modal.
 
-    Can be used when there is a cancel or close button, for example:
-    ```blade
-    <a href="#" x-on:click.prevent="hide()"> Cancel </a>
-    ```
+  Can be used when there is a cancel or close button, for example:
+
+  ```blade
+  <a href="#" x-on:click.prevent="hide()"> Cancel </a>
+  ```
+
 - `whenOpen(func)` - Function is executed when the modal is open.
 
-    Useful when you want the input to focus when the modal is opened, for example:
-    ```blade
-    <input type="text" x-effect="whenOpen(() => $el.focus())" />
-    ```
+  Useful when you want the input to focus when the modal is opened, for example:
+
+  ```blade
+  <input type="text" x-effect="whenOpen(() => $el.focus())" />
+  ```
 
 ### Example Usage
 
@@ -70,6 +73,6 @@
 </x-modal>
 ```
 
-## Modal With Explicit Location
+## Modal With Alignment
 
 TODO
