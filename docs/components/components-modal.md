@@ -35,11 +35,11 @@
 </div>
 ```
 
-### Component Properties
+### Properties
 
 - `open` - Defaults to `false`.
 
-### Available Functions
+### Functions
 
 - `show()` - Opens the modal.
 - `hide()` - Oloses the modal.
@@ -72,7 +72,3 @@
     </x-slot>
 </x-modal>
 ```
-
-## Modal With Alignment
-
-TODO
