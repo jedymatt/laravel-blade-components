@@ -39,8 +39,7 @@ Available Functions
 - `show()` - opens the modal
 - `whenOpen(func)` - function is executed when the modal is open, useful  when the modal has a form and you want it to focus on the input when the modal is opened
 
-Example usage
-
+::: details Example usage
 ```blade
 <x-modal :open="$errors->create->any()">
     <x-slot name="trigger">
@@ -96,3 +95,4 @@ Example usage
     </x-slot>
 </x-modal>
 ```
+:::
